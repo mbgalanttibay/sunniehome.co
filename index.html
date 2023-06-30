@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunnie Home</title>
+    <link rel="icon" href="icon2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="nav__wrapper">
+      <nav class="nav container">
+        <img src="menu2.png" alt="menu2" class="nav__menu" />
+        <img class="nav__logo" src="logo v2.png" alt="" />
+
+        <ul class="nav__ul">
+          <li><a class="nav__links" href="#main">Catalogs</a></li>
+          <li><a class="nav__links" href="#review">Review</a></li>
+          <li><a class="nav__links" href="#">Contact</a></li>
+          <li><a class="nav__links" href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header container" id="header">
+      <div class="header__wrapper">
+        <h1 class="header__h1 font-size--Xlarge font--style1">Sunnie Home</h1>
+        <div class="header__text__wrapper">
+          <h1 class="header__text font-size--medium font--style1">
+            A homebody and a plant enthusiast's haven.
+          </h1>
+          <a class="header__explore font-size--small" href="#main"
+            >Explore Now
+          </a>
+        </div>
+        <img class="header__img" src="header__img.jpg" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog__main container" id="main">
+        <h1 class="catalog__text font-size--Xlarge font--style1">Catalogs</h1>
+        <div class="catalog__container">
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod1.jpg"
+              alt="1"
+              data-num="1"
+              id="prod1"
+            />
+          </div>
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod2.jpg"
+              alt="2"
+              data-num="2"
+              id="prod2"
+            />
+          </div>
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod3.jpg"
+              alt="3"
+              data-num="3"
+              id="prod3"
+            />
+          </div>
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod4.jpg"
+              alt="4"
+              data-num="4"
+              id="prod4"
+            />
+          </div>
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod5.jpg"
+              alt="5"
+              data-num="5"
+              id="prod5"
+            />
+          </div>
+          <div class="img__wrapper">
+            <img
+              class="catalog__img"
+              src="prod/prod6.jpg"
+              alt="6"
+              data-num="6"
+              id="prod6"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--Review Section-->
+      <section class="review__main container" id="review">
+        <h1 class="review__text font-size--Xlarge font--style1">Reviews</h1>
+        <div class="review__slider">
+          <div class="review__slide">
+            <h5 class="testimonial__header">
+              The last step to becoming a complete minimalist
+              <br />
+              ⭐⭐⭐⭐⭐
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="Review/ElonMusk.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Elon Musk</h6>
+              <p class="testimonial__location">Mangaldan, Pangasinan</p>
+            </address>
+          </div>
+
+          <div class="review__slide">
+            <h5 class="testimonial__header">
+              It's like a whole new world to me.
+              <br />
+              ⭐⭐⭐⭐⭐
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="Review/BillGates.png"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Bill Gates</h6>
+              <p class="testimonial__location">San Jacinto, Pangasinan</p>
+            </address>
+          </div>
+          <div class="review__slide">
+            <h5 class="testimonial__header">
+              I wish I knew about them sooner
+              <br />
+              ⭐⭐⭐⭐⭐
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="Review/Dumbledore.png"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Albus Dumbledore</h6>
+              <p class="testimonial__location">Pozorrubio, Pangasinan</p>
+            </address>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-container hidden">
+      <button class="close__modal button-33">X</button>
+      <div class="modal-overlay">
+        <div class="modal">
+          <img class="modal-img" src="prod/prod1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="footer__div">
+        <img class="footer__img" src="cover.jpg" alt="" />
+      </div>
+    </footer> -->
+  </body>
+</html>
